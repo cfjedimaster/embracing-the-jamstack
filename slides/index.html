@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Embracing the Jamstack</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<style>
+		.twocol{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		</style>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Embracing the Jamstack</h1>
+				</section>
+			</div>
+		</div>
+
+		<section>
+			<h2>read.me</h2>
+			<ul>
+				<li>Lead Developer Evangelist for HERE (for a few days)</li>
+				<li>Second best "Just Dance 2019" player (in my house)</li>
+				<li>Blogging at www.raymondcamden.com</li>
+				<li>Tweeting @raymondcamden</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Thank You!</h2>
+			<div class="twocol">
+				<ul>
+					<li>raymondcamden.com</li>
+					<li>@raymondcamden</li>
+				</ul>
+				<img src="img/ray.jpg" style="float:right">
+			</div>
+		</section>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				slideNumber:'c/t'
+			});
+		</script>
+	</body>
+</html>
