@@ -102,8 +102,31 @@
 				<li class="fragment">Dynamic app server in development</li>
 				<li class="fragment">Output static files for production</li>
 				</ul>
+				<aside class="notes">
+				lets take a step back
+				</aside>
+				</section>
+
+				<section>
+				<h2>Example</h2>
+				<ul>
+				<li class="fragment">Write some markdown</li>
+				<li class="fragment">Create some data (JSON, YAML, etc)</li>
+				<li class="fragment">SSG "merges" this into HTML</li>
+				<li class="fragment">Deploy</li>
+				</ul>
 				</section>
 				
+				<section>
+				<h2>The "New" Stack</h2>
+				<ul>
+				<li><s>Apache (web server)</s></li>
+				<li><s>ColdFusion (app server)</s></li>
+				<li><s>MySQL (database server)</s></li>
+				<li class="fragment">Files</li>
+				</ul>
+				</section>
+
 				<section>
 					<h2>Thank You!</h2>
 					<div class="twocol">
@@ -124,6 +147,14 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
+
+			let notes = document.querySelectorAll('aside.notes');
+			notes.forEach(n => {
+				let html = n.innerHTML;
+				html = html.trim().replace(/\n/g, '<br/>');
+				n.innerHTML = html;
+			});
+
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
