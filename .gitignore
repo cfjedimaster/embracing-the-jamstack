@@ -102,4 +102,5 @@ typings/
 .vscode/
 
 #kinda late for this one
-_site
+**/_site/
+

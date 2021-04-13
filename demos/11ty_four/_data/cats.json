@@ -18,5 +18,10 @@
 		"name":"Sammy",
 		"gender":"male",
 		"image":"http://placekitten.com/500/500"
+	},
+	{
+		"name":"Aleice",
+		"gender":"female",
+		"image":"http://placekitten.com/600/600"
 	}
 ]
