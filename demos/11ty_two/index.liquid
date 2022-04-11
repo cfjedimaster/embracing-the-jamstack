@@ -1,5 +1,20 @@
 <h1>Hello World</h1>
 
+{% assign name = "Ray" %}
+{% assign isCool = true %}
+{% assign cats = "Luna,Elise,Pig" | split: "," %}
+
 <p>
-This file was last updated on {{ page.date }}.
+Hello, {{ name }}.
+{% if isCool %}
+	You are so cool, no matter what your kids say...
+{% endif %}
 </p>
+
+<h2>Cats</h2>
+<ul>
+{% for cat in cats %}
+	<li>{{ cat }}</li>
+{% endfor %}
+</ul>
+
