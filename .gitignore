@@ -104,3 +104,6 @@ typings/
 #kinda late for this one
 **/_site/
 
+
+# Local Netlify folder
+.netlify
